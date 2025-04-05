@@ -1,0 +1,34 @@
+.carrossel{
+    overflow-x: hidden;
+}
+
+.swiper-container {
+    width: 100%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px !important;
+}
+
+.slide-placeholder {
+    width: 100% !important;
+    height: 450px;
+    background: #ddd;
+    border-radius: 10px;
+}
+
+/* Estilizando os dots da paginação */
+.swiper-pagination-bullet {
+    background: #f4a9c4 !important;
+    opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+    background: #f4a9c4 !important;
+    opacity: 1;
+}

@@ -1,0 +1,23 @@
+.placeholder {
+    background-color: #eee;
+    height: 600px;
+    width: 95%;
+    justify-self: center;
+}
+
+.posts{
+    margin-left: 5.5rem;
+    margin-top: 5rem;
+}
+
+.postsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(480px, 3fr));
+    gap: 16px;
+}
+
+.post {
+    width: 480px;
+    height: 600px;
+    background-color: #eee;
+}
