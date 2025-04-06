@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
+    <link rel="stylesheet" href="src/css/sobre.css">
+
+    <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"
+        integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/ebbc1aa60f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <title>Transmasculinidades em Foco</title>
+    <link rel="shortcut icon"
+        href="https://img.myloview.com.br/posters/vector-flat-trans-transgender-transsexual-flag-symbol-isolated-on-white-background-700-257840239.jpg">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="src/img/logo.png" alt="logo">
+        </div>
+        <ul class="navigation">
+            <li><a href="index.html">home</a></li>
+            <li><a href="posts.html">posts</a></li>
+            <li><a href="sobre.html">sobre</a></li>
+            <li><a href="login.html"><i class="fa-solid fa-circle-user"></i></a></li>
+        </ul>
+
+        <div class="hamburguer">
+            <i class="fa-solid fa-bars on"></i>
+        </div>
+
+        <div class="alert">
+            <ul class="hamburguerNav">
+                <i class="fa-solid fa-x close"></i>
+                <li><a href="index.html">home</a></li>
+                <li><a href="posts.html">posts</a></li>
+                <li><a href="sobre.html">sobre</a></li>
+                <li><a href="login.html"><i class="fa-solid fa-circle-user"></i></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="top">
+        <h1 class="titulo">sobre o blog</h1>
+        <p class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id non commodi repellat atque, et eum
+            tempore! Fugit sunt temporibus similique minima quisquam distinctio inventore vero asperiores. Mollitia enim
+            tenetur quaerat dignissimos corrupti voluptatem! Sed nulla, error velit repudiandae harum sit quia tempore
+            ut inventore molestias aperiam tempora! Voluptate, odio ullam.</p>
+        <div class="imgs">
+            <div class="placeholder"></div>
+            <div class="placeholderPequeno"></div>
+            <div class="placeholder"></div>
+            <div class="placeholderPequeno"></div>
+        </div>
+    </div>
+
+    <section class="sobreLg028">
+        <h1 class="titulo gradiente">Sobre a LG028 - Atividades em Direitos Humanos</h1>
+        <p class="textoNormal">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, nisi? Officiis
+            aliquid voluptates sapiente dolorem molestiae iusto deleniti dolores, corrupti, consectetur eaque
+            exercitationem ea illum tempore recusandae! Ipsum tempore aliquid officiis excepturi debitis quidem at
+            consectetur commodi eum amet. Quaerat beatae laboriosam consectetur molestias error sed nihil vitae,
+            provident iste vero? Nostrum quis, aliquam obcaecati impedit voluptatibus nobis repudiandae ab nulla eos
+            dolores quae accusamus dolor enim consectetur consequuntur soluta id quaerat, optio qui cum! Ut natus
+            delectus perspiciatis architecto numquam consequatur, eveniet ullam laborum similique earum cumque
+            reiciendis, aut ipsam omnis quaerat neque voluptatum doloribus! Ab, maxime! Officia, porro.</p>
+    </section>
+    <section class="sobreIEL">
+        <h1 class="titulo gradiente">Sobre o Instituto de Estudos da Linguagem</h1>
+        <p class="textoNormal">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, nisi? Officiis
+            aliquid voluptates sapiente dolorem molestiae iusto deleniti dolores, corrupti, consectetur eaque
+            exercitationem ea illum tempore recusandae! Ipsum tempore aliquid officiis excepturi debitis quidem at
+            consectetur commodi eum amet. Quaerat beatae laboriosam consectetur molestias error sed nihil vitae,
+            provident iste vero? Nostrum quis, aliquam obcaecati impedit voluptatibus nobis repudiandae ab nulla eos
+            dolores quae accusamus dolor enim consectetur consequuntur soluta id quaerat, optio qui cum! Ut natus
+            delectus perspiciatis architecto numquam consequatur, eveniet ullam laborum similique earum cumque
+            reiciendis, aut ipsam omnis quaerat neque voluptatum doloribus! Ab, maxime! Officia, porro.</p>
+    </section>
+    <section class="sobreMim">
+        <h1 class="titulo gradiente">Sobre mim</h1>
+        <div class="fotoTxt">
+            <div class="placeholderEu"></div>
+            <!-- <img src="" alt=""> -->
+            <p class="textoNormal">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, nisi? Officiis
+                aliquid voluptates sapiente dolorem molestiae iusto deleniti dolores, corrupti, consectetur eaque
+                exercitationem ea illum tempore recusandae! Ipsum tempore aliquid officiis excepturi debitis quidem at
+                consectetur commodi eum amet. Quaerat beatae laboriosam consectetur molestias error sed nihil vitae,
+                provident iste vero? Nostrum quis, aliquam obcaecati impedit voluptatibus nobis repudiandae ab nulla eos
+                dolores quae accusamus dolor enim consectetur consequuntur soluta id quaerat, optio qui cum! Ut natus
+                delectus perspiciatis architecto numquam consequatur, eveniet ullam laborum similique earum cumque
+                reiciendis, aut ipsam omnis quaerat neque voluptatum doloribus! Ab, maxime! Officia, porro.</p>
+        </div>
+    </section>
+
+
+    <footer>
+
+        <div class="logo">
+            <img src="src/img/logo.png" alt="" srcset="">
+        </div>
+        <div class="nav">
+            <ul class="navFooter">
+                <li><a href="index.html">home</a></li>
+                <li><a href="posts.html">posts</a></li>
+                <li><a href="sobre.html">sobre</a></li>
+                <li><a href="iel.unicamp.br">site do iel</a></li>
+            </ul>
+        </div>
+        <div class="logo">
+            <img src="src/img/unicamp logo.png" alt="" srcset="">
+        </div>
+        <hr>
+        <p class="copyright">todos os direitos reservados © 2025 | desenvolvido por <a
+                href="nicolasdev-portifolio.vercel.app">Nicolas dos Santos</a></p>
+
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="src/js/script.js"></script>
+</body>
+
+</html>
