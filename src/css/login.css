@@ -1,0 +1,55 @@
+:root{
+    --azul: #5bcefa;
+    --rosa: #f5a9b8;
+    --branco: #f0f0f0;
+    --cinza: #4f4f4f;
+    --preto: #121212;
+    --Poppins: 'Poppins', sans-serif;
+    --Inter: 'Inter', sans-serif;
+    --gradiente: linear-gradient(90deg, rgba(245,169,184,1) 0%, rgb(255, 255, 255) 50%, rgba(91,206,250,1) 90%);
+}
+
+.login{
+    margin-top: 7rem;
+    justify-self: center;
+    height: 500px;
+    width: 450px;
+    background-color: #fff;
+    border-radius: 15px;
+    align-content: center;
+    font-family: var(--Poppins);
+}
+
+#loginForm{
+    justify-self: center;
+    justify-content: center;
+}
+
+label{
+    font-size: 1rem;
+    margin-bottom: 5rem;
+}
+
+input{
+    margin-bottom: 1rem;
+    margin-top: .5rem;
+    font-family: var(--Inter);
+    padding-left: .8rem;
+    height: 40px;
+    width: 250px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--branco);
+    color: var(--cinza);
+    outline: none;
+}
+
+button{
+    width: 100%;
+    height: 36px;
+    font-family: var(--Poppins);
+    margin-top: 2rem;
+    border: none;
+    background: var(--gradiente);
+    border-radius: 7px;
+}

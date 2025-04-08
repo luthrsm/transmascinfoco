@@ -1,0 +1,59 @@
+:root{
+    --azul: #5bcefa;
+    --rosa: #f5a9b8;
+    --branco: #f0f0f0;
+    --cinza: #4f4f4f;
+    --preto: #121212;
+    --Poppins: 'Poppins', sans-serif;
+    --Inter: 'Inter', sans-serif;
+    --gradiente: linear-gradient(90deg, rgba(245,169,184,1) 40%, rgba(91,206,250,1) 70%);
+}
+
+.top{
+    margin-top: 4rem;
+    color: var(--branco);
+    background-color: var(--preto);
+    justify-items: center;
+    height: 250px;
+}
+
+.titulo{
+    font-family: var(--Poppins);
+    text-transform:lowercase;
+    margin-bottom: 1rem;
+    padding-top: 3rem;
+}
+
+.txt{
+    font-family: var(--Inter);
+    width: 60%;
+    text-align: center;
+}
+
+section{
+    justify-self: center;
+    align-self: center;
+    width: 75%;
+}
+
+section .titulo{
+    background: var(--gradiente);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.sobreMim h1{
+    background: linear-gradient(90deg, rgba(245,169,184,1) 47%, rgba(91,206,250,1) 55%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.textoNormal{
+    font-family: var(--Inter);
+    line-height: 1.5;
+    font-size: 1.2rem;
+    text-align: justify;
+}

@@ -26,9 +26,9 @@ async function carregarPosts() {
             const post = doc.data();
             const postHTML = `
         <a href="visualizacao.html?id=${doc.id}" class="post">
-        <div>
-        ${post.imagem ? `<img src="${post.imagem}" alt="${post.titulo}">` : ''}
-        <h3>${post.titulo}</h3>
+        <div class="postDetalhes">
+        ${post.imagemCapa ? `<img src="${post.imagemCapa}" alt="${post.titulo}">` : ''}
+        <h3 class="tituloPost">${post.titulo}</h3>
         </div>
         </a>
         `;
@@ -57,7 +57,7 @@ async function carregarPostFixado() {
 
             postFixadoSection.innerHTML = `
                 <a href="visualizacao.html?id=${postId}">
-                    <img src="${post.imagem}" alt="Capa do post 'O que são transmasculinidades'" class="capaFixada">
+                    <img src="${post.imagemMaior}" alt="Capa do post 'O que são transmasculinidades'" class="capaFixada">
                 </a>
             `;
         } else {

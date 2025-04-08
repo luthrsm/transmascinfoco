@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="src/css/responsive.css">
-    <link rel="stylesheet" href="src/css/posts.css">
+    <link rel="stylesheet" href="src/css/postar.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"
         integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw=="
@@ -53,6 +53,9 @@
     <form id="postForm">
         <label for="titulo">Título:</label><br>
         <input type="text" id="titulo" required><br><br>
+
+        <label for="titulo">Subtítulo:</label><br>
+        <input type="text" id="subtitulo" required><br><br>
         
         <label for="file">Imagem de capa:</label><br>
         <input type="file" id="imagemCapa" accept="image/*"><br><br>
@@ -67,7 +70,7 @@
         <input type="text" id="legenda" required><br><br>
 
         <label for="conteudo">Conteúdo:</label><br>
-        <textarea id="p1" rows="200" required></textarea><br><br>
+        <textarea id="p1" rows="50" required></textarea><br><br>
 
         <button type="submit">Publicar</button>
     </form>

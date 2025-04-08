@@ -60,6 +60,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const titulo = document.getElementById("titulo").value;
       const conteudo = document.getElementById("p1").value;
+      const subtitulo = document.getElementById("subtitulo").value;
+      const legenda = document.getElementById("legenda").value;
 
       const imagemCapaInput = document.getElementById("imagemCapa");
       const imagemMaiorInput = document.getElementById("ImagemMaior");
@@ -85,6 +87,8 @@ document.addEventListener('DOMContentLoaded', () => {
         await db.collection("posts").add({
           titulo,
           conteudo,
+          subtitulo,
+          legenda,
           imagemCapa: imagemCapaBase64,
           imagemMaior: imagemMaiorBase64,
           imagemTexto: imagemTxtBase64,

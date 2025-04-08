@@ -1,0 +1,73 @@
+:root{
+    --azul: #5bcefa;
+    --rosa: #f5a9b8;
+    --branco: #f0f0f0;
+    --cinza: #4f4f4f;
+    --preto: #121212;
+    --Poppins: 'Poppins', sans-serif;
+    --Inter: 'Inter', sans-serif;
+    --gradiente: linear-gradient(90deg, rgba(245,169,184,1) 30%, rgba(91,206,250,1) 80%);
+}
+
+.fotoCapa{
+    margin-top: 7rem;
+}
+
+.materia{
+    justify-self: center;
+    width: 85%;
+}
+
+.materia .tituloMateria{
+    font-family: var(--Poppins);
+    font-size: 3rem;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.materia .subtituloMateria{
+    font-family: var(--Poppins);
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 1.6rem;
+}
+
+.publicacao{
+    font-family: var(--Poppins);
+    font-weight: 500;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.texto{
+    font-family: var(--Inter);
+    text-align: justify;
+}
+
+.texto p{
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.txtFoto{
+    display: flex;
+    flex-direction: row;
+    gap: 5.5rem;
+}
+
+.txtFoto  .img img{
+    width: 527px !important;
+    height: 373px !important;
+}
+
+.txtFoto  .img p{
+    font-size: .925rem;
+    margin-top: .5rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
