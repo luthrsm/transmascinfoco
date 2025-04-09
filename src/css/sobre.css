@@ -35,7 +35,8 @@
 section{
     justify-self: center;
     align-self: center;
-    width: 75%;
+    
+    width: 60%;
 }
 
 section .titulo{
