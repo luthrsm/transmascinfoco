@@ -66,6 +66,12 @@
     line-height: 1.5;
     font-size: 1.2rem;
     text-align: justify;
+    margin-bottom: 1rem;
+}
+
+.whyTransmasc .texto{
+    margin-top: 1rem;
+    margin-bottom: 0;
 }
 
 .gradient{
@@ -76,7 +82,7 @@
 
 .aboutDirHum, .whyTransmasc{
     justify-self: center;
-    width: 80%;
+    width: 60%;
     text-align: center;
     margin-top: 2rem;
 }
@@ -85,4 +91,15 @@
     background: linear-gradient(90deg, rgba(245,169,184,1) 0%, rgba(91,206,250,1) 70%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.list{
+    margin-left: 10rem;
+    width: 80%;
+    font-family: var(--Inter);
+    font-size: 1.2rem;
+    text-align: justify;
+    line-height: 1.5;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
