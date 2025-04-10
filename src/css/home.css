@@ -18,14 +18,13 @@
     position: relative;
     margin-top: 5rem;
     width: 100% !important;
-    height: 400px;
     justify-self: center;
     align-content: center;
 }
 
 .swiper-container {
     width: 1400px;
-    height: 412px;
+    height: 500px;
     margin: auto;
     padding: 20px 0;
     
