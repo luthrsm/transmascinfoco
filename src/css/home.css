@@ -18,6 +18,7 @@
     position: relative;
     margin-top: 5rem;
     width: 100% !important;
+    height: 600px;
     justify-self: center;
     align-content: center;
 }
