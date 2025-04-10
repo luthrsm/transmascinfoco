@@ -48,14 +48,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 800px !important;
-}
-
-.slide-placeholder {
-    width: 100% !important;
-    height: 412px;
-    background: #ddd;
-    border-radius: 10px;
 }
 
 /* Estilizando os dots da paginação */
