@@ -17,18 +17,14 @@
     overflow-x: hidden;
     position: relative;
     margin-top: 5rem;
-    margin-left: 10rem;
-    margin-right: 1rem;
-    width: 90% !important;
+    width: 100% !important;
     justify-self: center;
     align-content: center;
-    justify-content: center;
-    align-self: center;
 }
 
 .swiper-container {
-    width: 100%;
-    height: 100%;
+    width: 1400px;
+    height: 412px;
     margin: auto;
     padding: 20px 0;
     
