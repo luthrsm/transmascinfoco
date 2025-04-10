@@ -12,6 +12,9 @@
 .fotoCapa{
     margin-top: 5rem;
     justify-self: center;
+    align-content: center;
+    justify-content: center;
+    align-self: center;
 }
 
 .materia{
