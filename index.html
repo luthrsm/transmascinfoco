@@ -54,7 +54,7 @@
 
     <div class="carrossel">
         <div class="swiper-container">
-            <div class="swiper-wrapper" id="swiper-wrapper">
+            <div class="swiper-wrapper">
                 <!-- Os slides vão ser inseridos via JS -->
             </div>
             <div class="swiper-pagination"></div>
@@ -159,7 +159,7 @@
 
         async function carregarSlides() {
             const postsSnapshot = await getDocs(collection(db, "posts"));
-            const swiperWrapper = document.getElementById("swiper-wrapper");
+            const swiperWrapper = document.querySelector(".swiper-wrapper");
 
             postsSnapshot.forEach(doc => {
                 const post = doc.data();
