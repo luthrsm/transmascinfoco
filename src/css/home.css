@@ -19,10 +19,7 @@
     margin-left: 1rem;
     margin-right: 1rem;
     width: 100% !important;
-    justify-self: center;
-    align-content: center;
-    justify-content: center;
-    align-self: center;
+    
 }
 
 .swiper-container {
@@ -30,6 +27,10 @@
     height: 100%;
     margin: auto;
     padding: 20px 0;
+    justify-self: center;
+    align-content: center;
+    justify-content: center;
+    align-self: center;
 }
 
 .swiper-wrapper{
