@@ -25,6 +25,8 @@
     width: 100% !important;
 }
 
+
+
 .swiper-container {
     width: 100%;
     margin: auto;
@@ -34,6 +36,11 @@
 .swiper-wrapper{
     margin-bottom: 2rem;
 }
+
+.swiper-wrapper img{
+    width: 100%;
+}
+
 
 .swiper-slide {
     display: flex;
