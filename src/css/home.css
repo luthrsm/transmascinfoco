@@ -18,7 +18,10 @@
     margin-top: 5rem;
     margin-left: 1rem;
     margin-right: 1rem;
-
+    justify-self: center;
+    align-content: center;
+    justify-content: center;
+    align-self: center;
 }
 
 .swiper-container {
