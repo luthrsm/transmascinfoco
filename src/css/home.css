@@ -11,6 +11,9 @@
     --gradiente: linear-gradient(90deg, rgba(245,169,184,1) 30%, rgba(91,206,250,1) 80%);
 }
 
+body{
+    overflow-x:hidden;
+}
 
 .carrossel{
     overflow-x: hidden;
