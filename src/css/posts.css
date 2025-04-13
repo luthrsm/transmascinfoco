@@ -29,16 +29,20 @@
 }
 
 .postDetalhes img{
-    width: 480px;
-    height: 600px;
+    width: auto;
+    height: auto;
 }
 
 .postFixado{
     margin-top: 5rem;
+    margin-top: 5rem;
+    width: 100% !important;
+    text-align: center;
 }
 
 .post{
     text-decoration: none;
+    width: 450px;
 }
 
 .title{
@@ -54,8 +58,16 @@
 }
 
 .tituloPost{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family: var(--Poppins);
+    font-weight: 600;
     text-transform: capitalize;
     color: var(--preto);
+}
+
+.subtituloPost{
+    font-size: 0.865rem;
+    text-align: center;
+    color: var(--cinza);
+    font-family: var(--Inter);
 }

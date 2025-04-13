@@ -29,6 +29,7 @@ async function carregarPosts() {
         <div class="postDetalhes">
         ${post.imagemCapa ? `<img src="${post.imagemCapa}" alt="${post.titulo}">` : ''}
         <h3 class="tituloPost">${post.titulo}</h3>
+        <p class="subtituloPost">${post.subtitulo}</p>
         </div>
         </a>
         `;
@@ -46,7 +47,7 @@ async function carregarPostFixado() {
 
     try {
         const querySnapshot = await db.collection('posts')
-            .where('titulo', '==', 'O que são transmasculinidades')
+            .where('titulo', '==', 'O que são transmasculinidades?')
             .limit(1)
             .get();
 
