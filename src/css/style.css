@@ -70,7 +70,11 @@ header .navigation li a i{
     margin-left: -10rem;
 }
 
-.logo img {
+.logoMb{
+    display: none;
+}
+
+.logo img{
     width: 60%;
 }
 

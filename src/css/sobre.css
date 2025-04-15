@@ -61,3 +61,60 @@ section .titulo{
     text-align: justify;
     margin-bottom: 1.2rem;
 }
+
+/*responsividade*/
+
+/* @media screen and (max-width: 1440px) {
+    
+} */
+
+
+@media screen and (max-width: 1024px) {
+    .txt {
+        width: 80%;
+    }
+
+    section{
+        width: 80%;
+    }
+
+    .sobreMim{
+        margin-top: -2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .top{
+        height: 270px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .top{
+        height: 400px;
+    }
+
+    section .titulo{
+        font-size: 1.5rem;
+    }
+
+    .sobreIEL{
+        margin-top: -3rem;
+    }
+
+    .sobreMim .titulo{
+        margin-bottom: -.5rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .top{
+        height: 420px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .top{
+        height: 480px;
+    }
+}

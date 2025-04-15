@@ -73,3 +73,91 @@ header .hamburguer {
         display: block;
     }
 }
+
+@media screen and (max-width: 1024px) {
+    header .logo{
+        margin-left: -8rem;;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    footer .logo{
+        width: 130%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    header .logo{
+        display: none;
+    }
+
+    .logoMb{
+        display: flex;
+        width: 15%;
+        margin-left: -1rem;
+    }
+
+    footer .logo{
+        width: 100%;
+    }
+
+    footer .logo img{
+        width: 370px;
+    }
+    
+    .nav .navFooter li a{
+        font-size: .9rem;
+    }
+    
+    .copyright{
+        font-size: .7rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    /* .nav .navFooter{
+        flex-direction: column;
+    } */
+    .nav .navFooter li a{
+        font-size: .7rem;
+    }
+
+    .copyright{
+        font-size: .6rem;
+    }
+    footer .logo img{
+        width: 320px;
+    }
+
+    footer .logo{
+        width: 100%;
+    }
+
+    .logoUnicamp img{
+        width: 40% !important;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    .nav .navFooter li a{
+        font-size: .6rem;
+    }
+
+    .hamburguer{
+        right: -10%;
+    }
+
+    header .logo img{
+        display: none;
+    }
+
+    footer .logo{
+        width: 100%;
+        object-fit: contain;
+        margin-left: -5rem;
+    }
+    footer .logo img{
+        width: 320px;
+    }
+}

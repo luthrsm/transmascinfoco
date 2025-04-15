@@ -15,6 +15,8 @@
     align-content: center;
     justify-content: center;
     align-self: center;
+    width: 100%;
+    max-width: 1400px;
 }
 
 .materia{
@@ -59,21 +61,133 @@
     line-height: 1.5;
 }
 
-.txtFoto{
+.txtFoto {
     display: flex;
-    flex-direction: row;
-    gap: 5.5rem;
+    align-items: flex-start;
+    gap: 3rem;
 }
 
-.txtFoto  .img img{
-    width: 527px !important;
-    height: 373px !important;
+.txtFoto .img {
+    max-width: 527px;
+    height: auto;
+    margin-right: 1.5rem;
 }
 
-.txtFoto  .img p{
-    font-size: .925rem;
-    margin-top: .5rem;
-    font-weight: 500;
-    text-transform: capitalize;
+.txtFoto .textoFoto {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    text-align: justify;
+    overflow-wrap: break-word;
 }
 
+
+
+
+/*responsividade*/
+
+@media screen and (max-width: 1440px) {
+    .fotoCapa{
+        margin-left: -1.5rem;
+    }
+    .txtFoto {
+        flex-direction: column; /* Coloca imagem e texto um embaixo do outro em telas menores */
+    }
+
+    .txtFoto .img {
+        max-width: 100%;
+        margin-right: 0;
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .fotoCapa{
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .fotoCapa{
+        width: 950px;
+        height: 300px;
+        object-fit: contain;
+    }
+
+    .fotoCapa img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .fotoCapa{
+        width: 768px;
+        height: 250px;
+    }
+
+    .materia{
+        width: 90%;
+    }
+
+    .materia .tituloMateria{
+        font-size: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+    .fotoCapa{
+        width: 425px;
+        height: 150px;
+    }
+
+    .materia .tituloMateria{
+        font-size: 1.8rem;
+    }
+    .materia .subtituloMateria{
+        font-size: .8rem;
+    }
+    .publicacao{
+        flex-direction: column;
+        gap: .5rem;
+        font-size: .8rem;
+    }
+    .texto p, .paragrafos .textoFoto{
+        font-size: 1.1rem;
+    }
+
+    .img{
+        margin-top: -2rem;
+    }
+
+    .img .imgTxt{
+        width: 100%;
+    }
+
+    .img .legenda{
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .fotoCapa{
+        width: 375px;
+        height: 120px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .fotoCapa{
+        width: 320px;
+        height: 120px;
+        object-fit: contain;
+        margin-top: 4rem;
+    } 
+
+    .materia .tituloMateria{
+        font-size: 1.5rem;
+        margin-top: -.5rem;
+    }
+    .materia .subtituloMateria{
+        font-size: .6rem;
+    }
+}

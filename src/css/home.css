@@ -16,20 +16,21 @@
 .carrossel{
     overflow-x: hidden;
     position: relative;
-    margin-top: 5rem;
+    margin-top: 4rem;
     width: 100% !important;
-    justify-self: center;
-    align-content: center;
+    text-align: center;
     
 }
 
 .swiper-container {
-    width: 1400px;
-    height: 500px;
+    width: 100%;
+    max-width: 1400px;
+    aspect-ratio: 16 / 9;
     margin: auto;
     padding: 20px 0;
-    
+    height: 450px;
 }
+
 
 .swiper-wrapper{
     margin-bottom: 2rem;
@@ -37,10 +38,12 @@
     height: 100%;
 }
 
-.swiper-wrapper .capaSwiper img{
+.swiper-wrapper .capaSwiper img {
     width: 100%;
     height: 100%;
+    object-fit: contain; 
 }
+
 
 
 .swiper-slide {
@@ -84,6 +87,7 @@
     -webkit-text-fill-color: transparent;
 }
 
+
 .aboutDirHum, .whyTransmasc{
     justify-self: center;
     width: 60%;
@@ -106,4 +110,137 @@
     line-height: 1.5;
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+
+
+/*responsividade*/
+
+@media screen and (max-width: 1440px) {
+    .carrossel{
+        margin-left: -.6rem;
+    }
+
+    .aboutDirHum, .whyTransmasc{
+        width: 80%;
+        
+    }
+
+    .texto, .list{
+        font-size: 1.5rem;
+    }
+
+    .whyTransmasc .gradient{
+        background: linear-gradient(90deg, rgba(245,169,184,1) 20%, rgba(91,206,250,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+@media screen and (max-width: 1080px){
+    .texto, .list{
+        font-size: 1.2rem;
+    }
+    .carrossel{
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .swiper-container{
+        width: 950px;
+        height: 300px;
+        object-fit: contain;
+    }
+
+    .swiper-container .capaSwiper {
+        width: 99%;
+    }
+
+    .title{
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .swiper-container{
+        width: 768px;
+        height: 250px;
+        object-fit: contain;
+        
+    }
+
+    .title{
+        font-size: 2rem;
+    }
+
+    .texto,.list{
+        font-size: 1rem;
+    }
+    .list{
+        margin-left: 4rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .swiper-container{
+        width: 425px;
+        height: 150px;
+        object-fit: contain;
+    }
+    .title{
+        font-size: 1.6rem;
+    }
+    .texto,.list{
+        font-size: 0.9rem;
+    }
+    .list{
+        margin-left: 2.6rem;
+    }
+    
+}
+
+@media screen and (max-width: 375px) {
+    .swiper-container{
+        width: 375px;
+        height: 120px;
+        object-fit: contain;
+    }
+
+    .carrossel{
+        margin-top: 3.3rem;
+    }
+
+    .title{
+        font-size: 1.4rem;
+    }
+
+    .aboutDirHum .title {
+        margin-bottom: .5rem;
+    }
+
+    .aboutDirHum{
+        margin-top: 1rem;
+    }
+
+    .texto,.list{
+        font-size: .8rem;
+    }
+    .list{
+        margin-left: 2rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .swiper-container{
+        width: 320px;
+        object-fit: contain;
+    }
+    .aboutDirHum{
+        margin-top: .5rem;
+    }
+    .title{
+        font-size: 1.2rem;
+    }
+    
+
 }

@@ -35,9 +35,10 @@
 
 .postFixado{
     margin-top: 5rem;
-    margin-top: 5rem;
-    width: 100% !important;
+    width: 100%;
+    max-width: 1400px;
     text-align: center;
+    justify-self: center;
 }
 
 .post{
@@ -70,4 +71,129 @@
     text-align: center;
     color: var(--cinza);
     font-family: var(--Inter);
+}
+
+
+/*responsividade*/
+
+@media screen and (max-width: 1440px) {
+    .postFixado{
+        margin-left: -1.5rem;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .postFixado{
+        margin-left: 0;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .postFixado{
+        width: 950px;
+        height: 300px;
+        object-fit: contain;
+        
+    }
+    
+    .postFixado img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .postFixado{
+        width: 768px;
+        height: 250px;
+        object-fit: contain;
+    }
+
+    .title{
+        margin-top: -5rem;
+    }
+
+    .postsContainer{
+        grid-template-columns: repeat(auto-fill, minmax(350px, 2fr));
+        margin-left: -4rem;
+    }
+
+    .post{
+        width: 350px !important;
+    }
+
+    .postDetalhes img{
+        width: 350px;
+        height: 500px;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+    .postFixado{
+        width: 425px;
+        height: 150px;
+    }
+    .title{
+        font-size: 1.8rem;
+        text-align: center;
+        margin-left: -5.5rem;
+    }
+    .postsContainer{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 0;
+        margin-left: -5.5rem;
+        /* justify-self: center; */
+    }
+
+    .posts{
+        justify-self: center;
+    }
+    .postDetalhes img{
+        width: 350px;
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .postFixado{
+        width: 375px;
+        height: 120px;
+    }
+
+    
+}
+
+@media screen and (max-width: 320px) {
+    .postFixado{
+        width: 320px;
+        height: 120px;
+        object-fit: contain;
+    }
+
+    .postsContainer{
+        grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
+        margin-left: -5.5rem;
+    }
+
+    .postDetalhes img{
+        width: 300px;
+        height: auto;
+    }
+    
+    .post{
+        width: 300px !important;
+    }
+
+    .tituloPost{
+        font-size: 1rem;
+    }
+
+    .subtituloPost{
+        font-size: 0.7rem;
+        width: 80%;
+        justify-self: center;
+    }
 }
