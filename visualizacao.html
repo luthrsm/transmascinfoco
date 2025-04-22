@@ -188,17 +188,17 @@
 
                         txtFotoDiv.appendChild(paragrafosDiv); // adiciona os parágrafos dentro da div
 
-                        // Imagem + legenda
-                        const imgDiv = document.createElement('div');
-                        imgDiv.classList.add('img');
-                        imgDiv.innerHTML = `
-        <img src="${post.imagemTexto}" alt="imagem ilustrativa" class="imgTxt">
-        <p class="legenda">${post.legenda || ''}</p>
+                        // Só adiciona a imagem se ela existir
+if (post.imagemTexto) {
+    const imgDiv = document.createElement('div');
+    imgDiv.classList.add('img');
+    imgDiv.innerHTML = `
+      <img src="${post.imagemTexto}" alt="${post.legenda || 'imagem'}" class="imgTxt">
+      ${post.legenda ? `<p class="legenda">${post.legenda}</p>` : ''}
     `;
-                        txtFotoDiv.appendChild(imgDiv);
+    txtFotoDiv.appendChild(imgDiv);
+}
 
-                        textoDiv.appendChild(txtFotoDiv);
-                    }
 
                     else if (index !== 3) {
                         // pula o index 3, pois ele já foi usado acima
