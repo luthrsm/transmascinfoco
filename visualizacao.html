@@ -165,42 +165,43 @@
 
                 paragrafos.forEach((p, index) => {
                     if (index === 2) {
-                        const txtFotoDiv = document.createElement('div');
-                        txtFotoDiv.classList.add('txtFoto');
+    const txtFotoDiv = document.createElement('div');
+    txtFotoDiv.classList.add('txtFoto');
 
-                        // Criar div.paragrafos
-                        const paragrafosDiv = document.createElement('div');
-                        paragrafosDiv.classList.add('paragrafos');
+    // div.paragrafos
+    const paragrafosDiv = document.createElement('div');
+    paragrafosDiv.classList.add('paragrafos');
 
-                        // Primeiro parágrafo
-                        const textoFotoP1 = document.createElement('p');
-                        textoFotoP1.classList.add('textoFoto');
-                        textoFotoP1.textContent = p;
-                        paragrafosDiv.appendChild(textoFotoP1);
+    const textoFotoP1 = document.createElement('p');
+    textoFotoP1.classList.add('textoFoto');
+    textoFotoP1.textContent = p;
+    paragrafosDiv.appendChild(textoFotoP1);
 
-                        // Segundo parágrafo
-                        if (paragrafos[index + 1]) {
-                            const textoFotoP2 = document.createElement('p');
-                            textoFotoP2.classList.add('textoFoto');
-                            textoFotoP2.textContent = paragrafos[index + 1];
-                            paragrafosDiv.appendChild(textoFotoP2);
-                        }
+    if (paragrafos[index + 1]) {
+        const textoFotoP2 = document.createElement('p');
+        textoFotoP2.classList.add('textoFoto');
+        textoFotoP2.textContent = paragrafos[index + 1];
+        paragrafosDiv.appendChild(textoFotoP2);
+    }
 
-                        txtFotoDiv.appendChild(paragrafosDiv); // adiciona os parágrafos dentro da div
+    txtFotoDiv.appendChild(paragrafosDiv);
 
-                        // Só adiciona a imagem se ela existir
-if (post.imagemTexto) {
-    const imgDiv = document.createElement('div');
-    imgDiv.classList.add('img');
-    imgDiv.innerHTML = `
-      <img src="${post.imagemTexto}" alt="${post.legenda || 'imagem'}" class="imgTxt">
-      ${post.legenda ? `<p class="legenda">${post.legenda}</p>` : ''}
-    `;
-    txtFotoDiv.appendChild(imgDiv);
+    // imagem (condicional)
+    if (post.imagemTexto) {
+        const imgDiv = document.createElement('div');
+        imgDiv.classList.add('img');
+        imgDiv.innerHTML = `
+            <img src="${post.imagemTexto}" alt="${post.legenda || 'imagem'}" class="imgTxt">
+            ${post.legenda ? `<p class="legenda">${post.legenda}</p>` : ''}
+        `;
+        txtFotoDiv.appendChild(imgDiv);
+    }
+
+    textoDiv.appendChild(txtFotoDiv);
 }
 
 
-                    else if (index !== 3) {
+                    else if (index !== 3 || post.imagemTexto) {
                         // pula o index 3, pois ele já foi usado acima
                         const pEl = document.createElement('p');
                         pEl.classList.add('textoNormal');
